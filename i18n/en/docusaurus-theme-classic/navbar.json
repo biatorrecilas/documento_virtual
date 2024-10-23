@@ -1,0 +1,14 @@
+{
+  "logo.alt": {
+    "message": "Project Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentação": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.HAPPDINE Site": {
+    "message": "HAPPDINE Website",
+    "description": "Navbar item with label HAPPDINE Website"
+  }
+}

@@ -1,0 +1,26 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.sobreNos {
+  padding: 50px;
+  background-color: var(--ifm-background-color); 
+  text-align: left;
+}
+
+.sobreNos h2 {
+  color: var(--ifm-color-primary);
+}
+
+.sobreNos p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

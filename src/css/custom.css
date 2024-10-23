@@ -1,0 +1,52 @@
+/* Sobrescrevendo as variáveis padrão do Infima */
+:root {
+  --ifm-color-primary: #2E3033; /* Preto */
+  --ifm-color-primary-dark: #4E5256;
+  --ifm-color-primary-darker: #7D8389;
+  --ifm-color-primary-darkest: #B2B9C0;
+  --ifm-color-primary-light: #E0E2E5; /* Cinza clarinho */
+  --ifm-color-primary-lighter: #E0E2E5;
+  --ifm-color-primary-lightest: #E0E2E5;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Definindo cores mais claras para o tema escuro */
+[data-theme='dark'] {
+  --ifm-color-primary: #E0E2E5; /* Cinza clarinho */
+  --ifm-color-primary-dark: #B2B9C0;
+  --ifm-color-primary-darker: #7D8389;
+  --ifm-color-primary-darkest: #4E5256;
+  --ifm-color-primary-light: #2E3033; /* Preto */
+  --ifm-color-primary-lighter: #2E3033;
+  --ifm-color-primary-lightest: #2E3033;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Modificando o estilo da seção hero--primary */
+.hero.hero--primary {
+  background-color: var(--ifm-color-primary); /* Preto no modo claro */
+  color: var(--ifm-color-primary-light); /* Texto em cinza claro */
+}
+
+[data-theme='dark'] .hero.hero--primary {
+  background-color: var(--ifm-color-primary-light); /* Cinza clarinho no modo escuro */
+  color: var(--ifm-color-primary-darker); /* Texto em preto */
+}
+
+/* Estilização do rodapé semelhante à hero--primary */
+.footer {
+  background-color: var(--ifm-color-primary);  /* Preto no modo claro */
+  color: var(--ifm-color-primary-light);       /* Texto em cinza claro */
+}
+
+[data-theme='dark'] .footer {
+  background-color: var(--ifm-color-primary-light); /* Cinza clarinho no modo escuro */
+  color: var(--ifm-color-primary-darker);           /* Texto em preto */
+}
+
+
+.footer__copyright {
+  padding-top: 80px; /* Defina o padding desejado */
+}
+
