@@ -10,14 +10,10 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-      </div>
-    </header>
+    <div className={styles.container}>
+      <img src="img/banner.svg" alt="Documentação Virtual e HAPPDINE" className={styles.banner} />
+      <img src="img/linhaDupla.svg" className={styles.linhaDupla}></img>
+    </div>
   );
 }
 
@@ -34,3 +30,4 @@ export default function Home() {
     </Layout>
   );
 }
+

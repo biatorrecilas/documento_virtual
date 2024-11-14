@@ -5,10 +5,10 @@
   },
   "item.label.Documentação": {
     "message": "Documentation",
-    "description": "Navbar item with label Documentation"
+    "description": "Navbar item with label Documentação"
   },
-  "item.label.HAPPDINE Site": {
-    "message": "HAPPDINE Website",
-    "description": "Navbar item with label HAPPDINE Website"
+  "item.label.Site ": {
+    "message": "Website",
+    "description": "Navbar item with label Site "
   }
 }

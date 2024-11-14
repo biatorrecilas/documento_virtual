@@ -3,7 +3,7 @@
     "message": "AI Monitoring"
   },
   "Rapidez na execução e funcionalidades": {
-    "message": "Speed ​​of execution and functionalities"
+    "message": "Fast execution and functionality"
   },
   "Gráficos em Tempo Real": {
     "message": "Real-Time Charts"
@@ -12,20 +12,36 @@
     "message": "Information at hand"
   },
   "Facilidade com ChatBot": {
-    "message": "Ease with ChatBot"
+    "message": "Easy with ChatBot"
   },
   "Interatividade nas aplicações": {
     "message": "Interactivity in applications"
   },
-  "Sobre Nós": {
-    "message": "About Us"
+  "Tecnologia": {
+    "message": "Technology"
   },
-  "O HAPPDINE iniciou com uma ideia proposta em janeiro de 2024 na 6ª edição do HACKATHON, evento interno de sete dias realizado pela CaP/ETS (Engineering Technical School), onde recebeu a premiação de primeiro lugar. O projeto foi estruturado e, visando implementação na planta de Campinas, o HAPPDINE é desenvolvido como TCC para o terceiro semestre do curso de Desenvolvimento de Sistemas com SENAI e Bosch. Formados por integrantes de Digital Solutions das turmas 08, 09 e 10, o HAPPDINE é composto por 7 desenvolvedores: Adailton da Silva Filho, Ana Beatriz Nardy Torrecilas, Isabela Pereira Leite, Isabela Rocha dos Santos, João Vitor de Souza Goulart, Murilo Silva dos Santos e Sara de Oliveira Fernandes.": {
-    "message": "HAPPDINE started with an idea proposed in January 2024 at the 6th edition of HACKATHON, a seven-day internal event held by CaP/ETS (Engineering Technical School), where it received the first place award. The project was structured and, aiming at implementation at the Campinas plant, HAPPDINE is developed as a TCC for the third semester of the Systems Development course with SENAI and Bosch. Formed by Digital Solutions members from classes 08, 09 and 10, HAPPDINE is composed of 7 developers: Adailton da Silva Filho, Ana Beatriz Nardy Torrecilas, Isabela Pereira Leite, Isabela Rocha dos Santos, João Vitor de Souza Goulart, Murilo Silva dos Santos and Sara de Oliveira Fernandes."
+  "otimiza!": {
+    "message": "optimizes!"
+  },
+  "O HAPPDINE iniciou com uma ideia proposta em janeiro de 2024 na 6ª edição do HACKATHON, evento interno de sete dias realizado pela CaP/ETS, Engineering Technical School, onde recebeu a premiação de primeiro lugar. O projeto foi estruturado e construído como uma solução inovadora desenvolvida através da colaboração entre o programa Digital Talent Academy (DTA) e o curso Técnico em Desenvolvimento de Sistemas do SENAI “Roberto Mange”. A plataforma foi construída para otimizar e modernizar os processos operacionais do restaurante corporativo da Bosch de Campinas, oferecendo uma abordagem integrada para os diversos desafios de gestão do estabelecimento.": {
+    "message": "HAPPDINE began with an idea proposed in January 2024 at the 6th edition of HACKATHON, a seven-day internal event held by CaP/ETS, Engineering Technical School, in which it won. The project was structured and built as an innovative solution developed through collaboration between the Digital Talent Academy (DTA) program and SENAI's “Roberto Mange” Systems Development Technical course. The platform was built to optimize and modernize the operational processes of the Bosch corporate restaurant in Campinas, offering an integrated approach to the establishment's various management challenges."
+  },
+  "Benefícios": {
+    "message": "Benefits"
+  },
+  "SOBRE": {
+    "message": "ABOUT"
+  },
+  "NÓS": {
+    "message": "US"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
     "message": "Archive",
@@ -34,10 +50,6 @@
   "theme.blog.archive.description": {
     "message": "Archive",
     "description": "The page & hero description of the blog archive page"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
-    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Blog list page navigation",
@@ -99,9 +111,6 @@
     "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
-  "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
-  },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
     "message": "One doc tagged|{count} docs tagged",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -109,6 +118,9 @@
   "theme.docs.tagDocListPageTitle": {
     "message": "{nDocsTagged} with \"{tagName}\"",
     "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
@@ -146,21 +158,17 @@
     "message": "Last updated{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
   "theme.NotFound.title": {
     "message": "Page Not Found",
     "description": "The title of the 404 page"
   },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
   "theme.tags.tagsListLabel": {
     "message": "Tags:",
     "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
-    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
     "message": "caution",
@@ -186,13 +194,13 @@
     "message": "warning",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Blog recent posts navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.CodeBlock.copied": {
     "message": "Copied",
@@ -205,6 +213,10 @@
   "theme.CodeBlock.copy": {
     "message": "Copy",
     "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
     "message": "Expand sidebar category '{label}'",
@@ -301,6 +313,10 @@
   "theme.blog.authorsList.viewAll": {
     "message": "View all authors",
     "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
     "message": "Unlisted page",

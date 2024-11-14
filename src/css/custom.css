@@ -23,6 +23,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+
 /* Modificando o estilo da seção hero--primary */
 .hero.hero--primary {
   background-color: var(--ifm-color-primary); /* Preto no modo claro */
@@ -37,8 +38,10 @@
 /* Estilização do rodapé semelhante à hero--primary */
 .footer {
   background-color: var(--ifm-color-primary);  /* Preto no modo claro */
-  color: var(--ifm-color-primary-light);       /* Texto em cinza claro */
+  color: var(--ifm-color-primary-light); 
+  padding-top: 100px;      /* Texto em cinza claro */
 }
+
 
 [data-theme='dark'] .footer {
   background-color: var(--ifm-color-primary-light); /* Cinza clarinho no modo escuro */
@@ -47,6 +50,28 @@
 
 
 .footer__copyright {
-  padding-top: 80px; /* Defina o padding desejado */
+  padding-top: 80px;
 }
+
+.navbar {
+  min-height: 80px; 
+}
+
+
+.navbar__item {
+  padding: 0 25px; 
+}
+
+[data-theme='dark'] .navbar__logo img {
+  content: url('/img/HAPPDINE2.svg');
+}
+
+.navbar__logo img {
+  content: url('/img/HAPPDINE_dark.svg');
+}
+
+
+
+
+
 

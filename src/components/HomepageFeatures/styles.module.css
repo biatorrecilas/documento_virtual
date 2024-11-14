@@ -5,9 +5,144 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureImg {
+  height: 80px;
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.beneficio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.project{
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imagens {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 0 auto; 
+  width: 40%; 
+}
+
+.imagem1{
+  width: 50%;
+  height: auto; 
+  object-fit: cover;
+  margin-bottom: 120px;
+}
+
+.imagem2{
+  width: 50%;
+  height: auto; 
+  object-fit: cover;
+}
+
+.selo{
+  position: relative;
+  top: 0; 
+  left: 65px; 
+  width: 130px; 
+  height: auto; 
+  margin-bottom: 46%;
+  animation: girar 6s linear infinite;
+}
+
+/* Animação de rotação */
+@keyframes girar {
+  from {
+    transform: rotate(0deg); /* Começa na posição inicial */
+  }
+  to {
+    transform: rotate(360deg); /* Termina na posição de 360 graus */
+  }
+}
+
+.tecnologia{
+  width: 50%;
+  padding: 100px;
+
+}
+
+.conteudoTexto{
+  margin-right: '20px';
+  text-align: justify;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+
+.linhaPequena{
+  width: 20vw; 
+  max-width: 100px; 
+  height: auto; 
+}
+
+[data-theme='dark'] .titulo {
+  font-size: 3vw;
+  background: linear-gradient(
+    90deg, 
+    #7d8389 0%,
+    #e0e2e5 25%,
+    #e0e2e5 75%,
+    #7d8389 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent;
+}
+
+.titulo {
+  font-size: 3vw;
+  background: linear-gradient(
+    90deg, 
+    #2E3033 0%,    
+    #4E5256 25%,   
+    #4E5256 75%,   
+    #2E3033 100%   
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.subtitulo{
+  font-size: 2vw;
+  margin-bottom: 0px;
+}
+
+.linhaGrande {
+  margin-bottom: 120px;
+  margin-top: 70px;
+  width: 100%;
+  height: auto; 
+  background-image: url('/img/linhaGrande.svg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .sobreNos {
@@ -16,11 +151,178 @@
   text-align: left;
 }
 
-.sobreNos h2 {
-  color: var(--ifm-color-primary);
+.integrante{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 55px;
 }
 
-.sobreNos p {
-  font-size: 1rem;
-  line-height: 1.6;
+.imagemIntegrante{
+  width: 100%;
+  height: auto; 
 }
+
+.contato{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bannerImage {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media (max-width: 1000px) {
+  .linhaGrande {
+    margin-bottom: 60px;
+    margin-top: 0px;
+    min-height: 2px;
+  }
+
+  .linhaPequena{
+    width: 15vw;
+  }
+
+  [data-theme='dark'] .titulo {
+    font-size: 9.5vw; 
+    margin: 0;
+  }
+
+  .titulo {
+    font-size: 9.5vw; 
+    margin: 0;
+  }
+
+  .subtitulo{
+    font-size: 4.5vw;
+    margin-bottom: -9px;
+  }
+
+  .tecnologia{
+    padding: 0px;
+    width: 75%;
+  }
+
+  .conteudoTexto{
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .container{
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .featureImg {
+    height: 60px;
+    width: 70px;
+    margin-top: 90px;
+  }
+  
+  .project{
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+  .box{
+    flex-direction: column; 
+    gap: 30;
+  }
+
+  .imagens {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative; 
+    margin-bottom: 35px;
+  }
+  
+  .imagem1{
+    width: 60%;
+    height: auto; 
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .imagem2{
+    width: 60%;
+    height: auto; 
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .selo{
+    position: absolute;
+    top: -12%; 
+    left: 10%; 
+    width: 80px; 
+    height: auto;
+  }
+
+  .sobreNos{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+  }
+
+  .integrante{
+    margin: 25px;
+    width: 100%;
+  }
+
+  .imagemIntegrante{
+    width: 70%;
+    height: auto; 
+    max-width: 250px;
+  }
+
+  .time {
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    
+  }
+  
+}
+
+@media (min-width: 525px) {
+  .selo {
+    margin-left: 20px; 
+    width: 130px; 
+  }
+  .project{
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .project {
+    margin-top: 0px; 
+  }
+  .features {
+    padding: 0px;
+  }
+  
+}
+
+
+

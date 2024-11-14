@@ -1,9 +1,3 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -26,9 +20,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt-BR',
     locales: ['pt-BR', 'en'],
@@ -44,7 +35,9 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css', 
+          ],
         },
       }),
     ],
@@ -52,31 +45,30 @@ const config = {
 
   themeConfig:
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: '',
         logo: {
           alt: 'Project Logo',
-          src: 'img/HAPPDINE.svg',
+          src: '/img/HAPPDINE2.svg',
+          srcDark: '/img/HAPPDINE_dark.svg',
           style: { 
-            width: '150px', /* Defina o tamanho desejado */
+            width: '150px',
             height: 'auto',
-            paddingTop: '5px'   /* Manter a proporção da altura */
+            paddingTop: '5px', 
+            marginLeft: '30px',
           },
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
+            position: 'right',
             label: 'Documentação',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://happ-dine.vercel.app/',
-            label: 'HAPPDINE Site',
-            position: 'left',
+            to: 'https://happ-dine.vercel.app/',
+            label: 'Site ',
+            position: 'right',
           },
           {
             type: 'localeDropdown',
@@ -98,20 +90,20 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Time',
             items: [
               {
                 label: 'Sobre Nós',
-                href: 'https://happ-dine.vercel.app/about_us.html',
+                to: '/#sobre-nos',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Acessar',
             items: [
               {
                 label: 'HAPPDINE Site',
-                href: 'https://happ-dine.vercel.app/',
+                to: 'https://happ-dine.vercel.app/',
               },
             ],
           },
