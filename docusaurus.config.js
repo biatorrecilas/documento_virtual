@@ -4,6 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Documentação Virtual',
   tagline: 'HAPPDINE',
+  // Ícone exibido na aba do navegador
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

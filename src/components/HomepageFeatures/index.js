@@ -3,6 +3,8 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Translate, {translate} from '@docusaurus/Translate'; 
 import { useColorMode } from '@docusaurus/theme-common';
+import React, { useState, useEffect } from 'react';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 import iconIA from '@site/static/img/iconIA.svg';
 import iconGrafico from '@site/static/img/iconGrafico.svg';
@@ -50,57 +52,67 @@ function Feature({ imgSrc, title, description }) {
 }
 
 const abrirOutlook = (destinatario) => {
-  const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=${encodeURIComponent(destinatario)}`;
-  window.open(outlookUrl);
+  if (ExecutionEnvironment.canUseDOM) {
+    const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=${encodeURIComponent(destinatario)}`;
+    window.open(outlookUrl);
+  }
 };
 
 function LineContatoIcon() {
-  // acessar o modo atual (claro ou escuro)
+  const [iconSrc, setIconSrc] = useState('');
   const { colorMode } = useColorMode();
 
-  // Detecta o idioma atual verificando a URL
-  const isEnglish = window.location.pathname.includes('/en/');
+  useEffect(() => {
+    if (ExecutionEnvironment.canUseDOM) {
+      const isEnglish = window.location.pathname.includes('/en/');
+      const src = `${isEnglish ? '/en' : ''}${
+        colorMode === 'dark' ? '/img/LineContato.svg' : '/img/LineContato_dark.svg'
+      }`;
+      setIconSrc(src);
+    }
+  }, [colorMode]);
 
-  // Define o caminho da imagem com base no tema atual: 
-  // Se o tema for 'dark', usa 'LineContato.svg', caso contrário, usa 'LineContato_dark.svg'
-  const iconSrc = `${isEnglish ? '/en' : ''}${
-    colorMode === 'dark' ? '/img/LineContato.svg' : '/img/LineContato_dark.svg'
-  }`;
-
-  return (
-    <img src={iconSrc} className="line-contato" />
-  );
+  return <img src={iconSrc} className="line-contato" alt="Ícone Line Contato" />;
 }
 
 function LinkedinIcon() {
-  // acessar o modo atual (claro ou escuro)
+  const [iconSrc, setIconSrc] = useState('');
   const { colorMode } = useColorMode();
 
-  // Detecta o idioma atual verificando a URL
-  const isEnglish = window.location.pathname.includes('/en/');
+  useEffect(() => {
+    if (ExecutionEnvironment.canUseDOM) {
+      const isEnglish = window.location.pathname.includes('/en/');
+      const src = `${isEnglish ? '/en' : ''}${
+        colorMode === 'dark' ? '/img/linkedin.svg' : '/img/linkedin_dark.svg'
+      }`;
+      setIconSrc(src);
+    }
+  }, [colorMode]);
 
-  // Define o caminho da imagem com base no tema e lingua atual: 
-  const iconSrc = `${isEnglish ? '/en' : ''}${
-    colorMode === 'dark' ? '/img/linkedin.svg' : '/img/linkedin_dark.svg'
-  }`;
-
-  return (
-    <img src={iconSrc} className="line-contato" />
-  );
+  return <img src={iconSrc} className="line-contato" alt="Ícone LinkedIn" />;
 }
 
-function ContatoIcon({onClick}) {
-  // acessar o modo atual (claro ou escuro)
+function ContatoIcon({ onClick }) {
+  const [iconSrc, setIconSrc] = useState('');
   const { colorMode } = useColorMode();
-  // Detecta o idioma atual verificando a URL
-  const isEnglish = window.location.pathname.includes('/en/');
-  // Define o caminho da imagem com base no tema atual: 
-  const iconSrc = `${isEnglish ? '/en' : ''}${ 
-    colorMode === 'dark' ? '/img/email.svg' : '/img/email_dark.svg'
-  }`;
+
+  useEffect(() => {
+    if (ExecutionEnvironment.canUseDOM) {
+      const isEnglish = window.location.pathname.includes('/en/');
+      const src = `${isEnglish ? '/en' : ''}${
+        colorMode === 'dark' ? '/img/email.svg' : '/img/email_dark.svg'
+      }`;
+      setIconSrc(src);
+    }
+  }, [colorMode]);
 
   return (
-    <img src={iconSrc} alt="Ícone de Contato" onClick={onClick} style={{ cursor: 'pointer' }} />
+    <img
+      src={iconSrc}
+      alt="Ícone de Contato"
+      onClick={onClick}
+      style={{ cursor: 'pointer' }}
+    />
   );
 }
 
@@ -180,7 +192,7 @@ export default function HomepageFeatures() {
                   </a>
                   <LineContatoIcon />
                   <ContatoIcon 
-                    onClick={() => abrirOutlook("")} 
+                    onClick={() => abrirOutlook("campinas.ets@br.bosch.com")} 
                   />
                 </div>
               </div>
@@ -206,7 +218,7 @@ export default function HomepageFeatures() {
                   </a>
                   <LineContatoIcon />
                   <ContatoIcon 
-                    onClick={() => abrirOutlook("")} 
+                    onClick={() => abrirOutlook("campinas.ets@br.bosch.com")} 
                   />
                 </div>
               </div>
