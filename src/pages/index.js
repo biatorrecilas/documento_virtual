@@ -11,7 +11,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <div className={styles.container}>
-      <img src="img/banner.svg" alt="Documentação Virtual e HAPPDINE" className={styles.banner} />
+      <img className={styles.banner} alt="Banner HAPPDINE"></img>
       <img src="img/linhaDupla.svg" className={styles.linhaDupla}></img>
     </div>
   );

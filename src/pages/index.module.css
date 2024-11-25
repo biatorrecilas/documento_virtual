@@ -1,17 +1,25 @@
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
   position: relative;
+  margin: 0; 
+  padding: 0;
+  overflow: hidden; 
 }
 
 .banner {
   width: 100%; 
-  height: auto; 
+  height: 100%; 
   object-fit: cover;
+  content: url('/img/banner.png');
+  padding: 0; 
+  display: block; 
+  margin: 0;
+  padding: 0;
 }
 
 .linhaDupla{
@@ -25,7 +33,6 @@
 
 @media (max-width: 768px) {
   .banner {
-      height: 22vh; 
-      object-fit: cover;
+      content: url('/img/bannerMobile.png');
   }
 }

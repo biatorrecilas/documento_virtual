@@ -6,9 +6,6 @@ import { useColorMode } from '@docusaurus/theme-common';
 import React, { useState, useEffect } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
-import iconIA from '@site/static/img/iconIA.svg';
-import iconGrafico from '@site/static/img/iconGrafico.svg';
-import iconCaht from '@site/static/img/iconChat.svg';
 
 const FeatureList = [
   {
@@ -169,7 +166,7 @@ export default function HomepageFeatures() {
             </div>
         
               <div className={styles.integrante}>
-                <img src="img/Adam.svg" className={styles.imagemIntegrante}/>
+                <img src="img/Adam.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Adailton Filho</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/adailton-filho-85804428a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -184,7 +181,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/Bia.svg" className={styles.imagemIntegrante}/>
+                <img src="img/Bia.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Ana Beatriz Torrecilas</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/ana-beatriz-n-torrecilas-a32160291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -197,7 +194,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/IsaP.svg" className={styles.imagemIntegrante}/>
+                <img src="img/IsaP.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Isabela Pereira</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/isabela-leite-80236a25b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -210,7 +207,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/IsaR.svg" className={styles.imagemIntegrante}/>
+                <img src="img/IsaR.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Isabela Rocha</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/isabela-rocha-ba0a49216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -223,7 +220,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/Joao.svg" className={styles.imagemIntegrante}/>
+                <img src="img/Joao.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>João Goulart</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-souza-goulart-4517432b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -236,7 +233,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/Murilo.svg" className={styles.imagemIntegrante}/>
+                <img src="img/Murilo.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Murilo Santos</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/murilo-silva-dos-santos-149a02212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -249,7 +246,7 @@ export default function HomepageFeatures() {
                 </div>
               </div>
               <div className={styles.integrante}>
-                <img src="img/Sara.svg" className={styles.imagemIntegrante}/>
+                <img src="img/Sara.png" className={styles.imagemIntegrante}/>
                 <p style={{ marginBottom: '10px' }}>Sara de Oliveira</p>
                 <div className={styles.contato}>
                   <a href="https://www.linkedin.com/in/sara-oliveira-fernandes-1689a3260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
